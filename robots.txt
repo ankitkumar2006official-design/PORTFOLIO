@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ankitkumar.dev/sitemap.xml
+Sitemap: https://portfolio-fnd6.onrender.com/sitemap.xml
 

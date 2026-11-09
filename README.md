@@ -6,6 +6,15 @@ Welcome to the personal developer portfolio repository of **Ankit Kumar**, an un
 
 ---
 
+## 🌐 Live Website
+
+[![Live Deployment](https://img.shields.io/badge/Live_Site-portfolio--fnd6.onrender.com-10b981?style=for-the-badge&logo=render&logoColor=white)](https://portfolio-fnd6.onrender.com/)
+
+**Live URL:** [https://portfolio-fnd6.onrender.com/](https://portfolio-fnd6.onrender.com/)  
+**ATS Resume:** [https://portfolio-fnd6.onrender.com/resume.html](https://portfolio-fnd6.onrender.com/resume.html)
+
+---
+
 ## 🌟 Overview
 
 This portfolio website is designed and engineered to showcase real-world full-stack development, applied artificial intelligence, and autonomous software engineering projects.
@@ -13,6 +22,7 @@ This portfolio website is designed and engineered to showcase real-world full-st
 - **Developer:** Ankit Kumar
 - **Institution:** Sikkim Manipal Institute of Technology (SMIT), Sikkim
 - **Specialization:** Aspiring AI Engineer | Full-Stack Developer | Machine Learning Enthusiast
+- **Live Deployment:** [https://portfolio-fnd6.onrender.com/](https://portfolio-fnd6.onrender.com/)
 - **Official Email:** [ankitkumar2006official@gmail.com](mailto:ankitkumar2006official@gmail.com)
 - **GitHub:** [https://github.com/ankitkumar2006official-design](https://github.com/ankitkumar2006official-design)
 - **LinkedIn:** [https://www.linkedin.com/in/ankit-kumar-3388732ba/](https://www.linkedin.com/in/ankit-kumar-3388732ba/)
