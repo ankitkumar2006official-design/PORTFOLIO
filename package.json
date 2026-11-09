@@ -1,0 +1,13 @@
+{
+  "name": "ankit-kumar-developer-portfolio",
+  "version": "2.0.0",
+  "description": "Personal Developer Portfolio of Ankit Kumar — Aspiring AI Engineer & Full-Stack Developer",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Static assets ready'"
+  },
+  "author": "Ankit Kumar <ankitkumar2006official@gmail.com>",
+  "license": "MIT"
+}

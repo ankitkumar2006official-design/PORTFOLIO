@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 3000;
-const PUBLIC_DIR = __dirname;
+const PUBLIC_DIR = path.resolve(__dirname);
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
@@ -17,18 +17,26 @@ const MIME_TYPES = {
   '.gif': 'image/gif',
   '.ico': 'image/x-icon',
   '.xml': 'application/xml; charset=UTF-8',
-  '.txt': 'text/plain; charset=UTF-8'
+  '.txt': 'text/plain; charset=UTF-8',
+  '.woff2': 'font/woff2',
+  '.woff': 'font/woff',
+  '.ttf': 'font/ttf'
 };
 
 const server = http.createServer((req, res) => {
   let safePath = req.url.split('?')[0];
-  if (safePath === '/') safePath = '/index.html';
+  try {
+    safePath = decodeURIComponent(safePath);
+  } catch (e) {}
+
+  if (safePath === '/' || safePath === '') safePath = '/index.html';
   if (safePath === '/resume') safePath = '/resume.html';
 
-  const filePath = path.join(PUBLIC_DIR, safePath);
+  const filePath = path.resolve(PUBLIC_DIR, '.' + safePath);
+  const rel = path.relative(PUBLIC_DIR, filePath);
 
   // Security check: ensure path is within PUBLIC_DIR
-  if (!filePath.startsWith(PUBLIC_DIR)) {
+  if (rel.startsWith('..') || path.isAbsolute(rel)) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     res.end('Forbidden');
     return;
@@ -47,9 +55,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, {
       'Content-Type': contentType,
       'Content-Length': stats.size,
-      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
-      'Pragma': 'no-cache',
-      'Expires': '0'
+      'Cache-Control': 'public, max-age=3600'
     });
 
     fs.createReadStream(filePath).pipe(res);
@@ -73,4 +79,3 @@ server.on('error', (err) => {
     console.error('Server error:', err);
   }
 });
-
