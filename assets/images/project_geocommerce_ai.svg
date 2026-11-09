@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="geoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121d"/>
+      <stop offset="50%" stop-color="#121829"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+    <linearGradient id="geoAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="geoCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2438" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#111627" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="geoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#geoBg)"/>
+
+  <!-- Geometric Grid & Coordinates -->
+  <g opacity="0.08" stroke="#f59e0b" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="405" x2="1200" y2="405"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="675"/>
+    <line x1="480" y1="0" x2="480" y2="675"/>
+    <line x1="720" y1="0" x2="720" y2="675"/>
+    <line x1="960" y1="0" x2="960" y2="675"/>
+  </g>
+
+  <!-- Ambient Glows -->
+  <circle cx="980" cy="190" r="170" fill="#f59e0b" opacity="0.1" filter="url(#geoGlow)"/>
+  <circle cx="220" cy="480" r="160" fill="#ec4899" opacity="0.1" filter="url(#geoGlow)"/>
+
+  <!-- Main Window Frame -->
+  <g transform="translate(80, 60)">
+    <rect width="1040" height="555" rx="16" fill="url(#geoCard)" stroke="#38294a" stroke-width="1.5"/>
+
+    <!-- Titlebar -->
+    <rect width="1040" height="48" rx="16" fill="#1b1d30" opacity="0.95"/>
+    <circle cx="30" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="50" cy="24" r="6" fill="#f59e0b"/>
+    <circle cx="70" cy="24" r="6" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="260" y="10" width="520" height="28" rx="14" fill="#0c0e18" stroke="#38294a" stroke-width="1"/>
+    <text x="520" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">geoecommerce-ai.vercel.app</text>
+
+    <!-- App Header -->
+    <g transform="translate(30, 75)">
+      <!-- Geo / Globe Icon -->
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="url(#geoAccent)"/>
+      <circle cx="18" cy="18" r="9" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <ellipse cx="18" cy="18" rx="4" ry="9" stroke="#ffffff" stroke-width="1.5" fill="none"/>
+      <line x1="9" y1="18" x2="27" y2="18" stroke="#ffffff" stroke-width="1.5"/>
+
+      <text x="48" y="22" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="19">GeoCommerce AI</text>
+      <text x="48" y="38" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="12">Geographic Commerce Intelligence & Gemini-Powered Demand Analytics</text>
+
+      <!-- Gemini AI Badge -->
+      <rect x="800" y="4" width="180" height="28" rx="14" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="818" cy="18" r="4" fill="#fbbf24"/>
+      <text x="898" y="22" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">GEMINI AI INTEGRATED</text>
+    </g>
+
+    <!-- Top Key Metrics Cards -->
+    <g transform="translate(30, 140)">
+      <rect x="0" y="0" width="235" height="90" rx="12" fill="#0f1424" stroke="#262238" stroke-width="1"/>
+      <text x="20" y="30" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Regional Sales Volume</text>
+      <text x="20" y="66" fill="#f1f5f9" font-family="'Outfit', sans-serif" font-weight="700" font-size="28">₹4.82 M</text>
+      <text x="145" y="64" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12">+22.4% MoM</text>
+
+      <rect x="255" y="0" width="235" height="90" rx="12" fill="#0f1424" stroke="#262238" stroke-width="1"/>
+      <text x="275" y="30" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Active Geo Markets</text>
+      <text x="275" y="66" fill="#f1f5f9" font-family="'Outfit', sans-serif" font-weight="700" font-size="28">34 Cities</text>
+      <text x="400" y="64" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="12">High Density</text>
+
+      <rect x="510" y="0" width="235" height="90" rx="12" fill="#0f1424" stroke="#262238" stroke-width="1"/>
+      <text x="530" y="30" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Gemini Demand Insights</text>
+      <text x="530" y="66" fill="#f1f5f9" font-family="'Outfit', sans-serif" font-weight="700" font-size="28">142 Generative</text>
+      <text x="665" y="64" fill="#ec4899" font-family="'JetBrains Mono', monospace" font-size="12">Synthesized</text>
+
+      <rect x="765" y="0" width="215" height="90" rx="12" fill="#0f1424" stroke="#262238" stroke-width="1"/>
+      <text x="785" y="30" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Storage & Pipeline</text>
+      <text x="785" y="66" fill="#f1f5f9" font-family="'Outfit', sans-serif" font-weight="700" font-size="24">MongoDB Atlas</text>
+    </g>
+
+    <!-- Lower Section: Geo Map Analytics & Gemini AI Insights Panel -->
+    <g transform="translate(30, 250)">
+      <!-- Map & Regional Density Visualization -->
+      <rect x="0" y="0" width="570" height="225" rx="12" fill="#0f1424" stroke="#262238" stroke-width="1"/>
+      <text x="24" y="34" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">Geographic Sales Clusters & Regional Demand</text>
+
+      <!-- Abstract Map with Hotspots -->
+      <g transform="translate(40, 50)">
+        <!-- Node 1: Delhi NCR -->
+        <circle cx="160" cy="40" r="18" fill="#f59e0b" fill-opacity="0.25"/>
+        <circle cx="160" cy="40" r="7" fill="#f59e0b"/>
+        <text x="185" y="44" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="11">Delhi NCR (₹1.4M)</text>
+
+        <!-- Node 2: Mumbai / Pune -->
+        <circle cx="100" cy="95" r="24" fill="#ec4899" fill-opacity="0.25"/>
+        <circle cx="100" cy="95" r="8" fill="#ec4899"/>
+        <text x="130" y="99" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="11">Mumbai Hub (₹1.9M)</text>
+
+        <!-- Node 3: Bangalore -->
+        <circle cx="140" cy="140" r="16" fill="#8b5cf6" fill-opacity="0.25"/>
+        <circle cx="140" cy="140" r="6" fill="#8b5cf6"/>
+        <text x="165" y="144" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="11">Bengaluru (₹1.1M)</text>
+
+        <!-- Node 4: East / Sikkim Corridor -->
+        <circle cx="340" cy="65" r="14" fill="#10b981" fill-opacity="0.25"/>
+        <circle cx="340" cy="65" r="6" fill="#10b981"/>
+        <text x="365" y="69" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="11">East / Sikkim (+38%)</text>
+
+        <!-- Connecting Data Stream lines -->
+        <line x1="160" y1="40" x2="100" y2="95" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+        <line x1="100" y1="95" x2="140" y2="140" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+        <line x1="160" y1="40" x2="340" y2="65" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+      </g>
+
+      <!-- Gemini AI Synthesis Box -->
+      <g transform="translate(590, 0)">
+        <rect x="0" y="0" width="390" height="225" rx="12" fill="#0f1424" stroke="#262238" stroke-width="1"/>
+        <text x="20" y="34" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">Gemini AI Synthesis & Strategy</text>
+
+        <g transform="translate(20, 52)">
+          <rect width="350" height="68" rx="8" fill="#181e35"/>
+          <text x="14" y="24" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">PROMPT: Regional Surge Pattern</text>
+          <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">"Tier-2 North-East corridor showing 38% spikes in footwear & apparel. Recommend reallocating Guwahati distribution hubs."</text>
+        </g>
+
+        <g transform="translate(20, 130)">
+          <rect width="350" height="72" rx="8" fill="#181e35"/>
+          <text x="14" y="24" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">ACTIONABLE INVENTORY ADVISORY</text>
+          <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">"Forecasted stock replenishment required for Mumbai Metro within 48 hours to avert 14% cart abandonment drop."</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+

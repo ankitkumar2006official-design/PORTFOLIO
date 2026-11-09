@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en" data-accent="emerald">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankit Kumar | Aspiring AI Engineer & Full-Stack Developer | SMIT</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Ankit Kumar, Aspiring AI Engineer, Full-Stack Developer & Machine Learning Enthusiast. B.Tech Computer Science and Engineering at Sikkim Manipal Institute of Technology (2024–2028). Explore projects, live demos, and architecture.">
+  <meta name="keywords" content="Ankit Kumar, AI Engineer, Full-Stack Developer, Machine Learning, Generative AI, SMIT, Sikkim Manipal Institute of Technology, Tracker, MediGuard AI, GeoCommerce AI, Autonomous AI Agent">
+  <meta name="author" content="Ankit Kumar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ankit Kumar | Aspiring AI Engineer & Full-Stack Developer">
+  <meta property="og:description" content="Building Intelligent Systems with AI, Data & Full-Stack Engineering. Explore real-world projects, live deployments, and architecture.">
+  <meta property="og:image" content="assets/images/project_geocommerce_ai.png">
+  <meta property="og:url" content="https://ankitkumar.dev/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ankit Kumar | Aspiring AI Engineer & Full-Stack Developer">
+  <meta name="twitter:description" content="Building Intelligent Systems with AI, Data & Full-Stack Engineering.">
+  <meta name="twitter:image" content="assets/images/project_geocommerce_ai.png">
+
+  <link rel="canonical" href="https://ankitkumar.dev/">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=2.2">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Custom Glowing Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Ambient Dynamic Canvas & Orbs -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-ambient-layer">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+  <div class="grid-pattern-overlay"></div>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="navbar" id="main-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Ankit Kumar Portfolio Home">
+        <div class="brand-badge">AK</div>
+        <div class="brand-text">
+          <span>Ankit Kumar</span>
+          <span class="brand-subtext">AI & FULL-STACK • SMIT</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Highlights</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Action Items & Themes -->
+      <div class="nav-actions">
+        <!-- Accent Theme Picker -->
+        <div class="theme-picker" title="Switch Theme Accent">
+          <div class="theme-dot active" data-theme="emerald" title="Emerald Mint (Default)"></div>
+          <div class="theme-dot" data-theme="cyan" title="Electric Cyan"></div>
+          <div class="theme-dot" data-theme="violet" title="Cyber Violet"></div>
+          <div class="theme-dot" data-theme="amber" title="Solar Amber"></div>
+        </div>
+
+        <!-- Sound Audio FX Toggle -->
+        <button class="icon-btn" id="sound-toggle-btn" aria-label="Toggle Sound Effects" title="Enable Sound Feedback">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+
+        <!-- Direct Contact Action -->
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Contact Me</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About & Background</a>
+    <a href="#skills" class="mobile-nav-link">Technical Skills</a>
+    <a href="#projects" class="mobile-nav-link">Major Projects</a>
+    <a href="#experience" class="mobile-nav-link">What Sets Me Apart</a>
+    <a href="#education" class="mobile-nav-link">Education</a>
+    <a href="#contact" class="mobile-nav-link">Get In Touch</a>
+  </div>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <!-- Left Hero Column -->
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="status-beacon"></span>
+          <span class="hero-status-text">Available for Software Engineering & AI Internships</span>
+          <span class="smit-badge-inline">📍 SMIT Sikkim (2024–2028)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Building Intelligent Systems with <br>
+          <span class="hero-typing-wrapper">
+            <span id="hero-typing-target"></span><span class="typing-cursor"></span>
+          </span>
+        </h1>
+
+        <p class="hero-description">
+          I am a Computer Science undergraduate passionate about Artificial Intelligence, Machine Learning and Full-Stack Development. I enjoy building practical software solutions by combining intelligent systems with modern web technologies.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="resume-download-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>Resume</span>
+          </a>
+        </div>
+
+        <!-- Social Media Profiles Integration (Hero) -->
+        <div class="hero-social-row">
+          <a href="https://github.com/ankitkumar2006official-design" target="_blank" rel="noopener noreferrer" class="hero-social-pill" aria-label="Ankit Kumar GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+          <a href="https://www.linkedin.com/in/ankit-kumar-3388732ba/" target="_blank" rel="noopener noreferrer" class="hero-social-pill" aria-label="Ankit Kumar LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="hero-quick-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-number stat-count" data-target="4" data-suffix="">4</span>
+            <span class="hero-stat-label">Engineering Projects</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number stat-count" data-target="3" data-suffix="">3</span>
+            <span class="hero-stat-label">Live Cloud Deployments</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number stat-count" data-target="2028" data-suffix="">2028</span>
+            <span class="hero-stat-label">B.Tech Batch @ SMIT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Column -->
+      <div class="hero-visual-card">
+        <!-- Floating Micro Chip 1 -->
+        <div class="floating-chip chip-top-right">
+          <div class="chip-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.7rem; color:var(--text-faint);">CORE FOCUS</div>
+            <div>AI & Full-Stack Systems</div>
+          </div>
+        </div>
+
+        <!-- Glass Frame with Profile Photo -->
+        <div class="avatar-glass-frame">
+          <div class="avatar-image-container">
+            <img src="assets/images/avatar.jpg" alt="Ankit Kumar - Aspiring AI Engineer & Full-Stack Developer from SMIT Sikkim" width="500" height="500">
+            <div class="avatar-overlay-gradient"></div>
+            <div class="avatar-campus-tag">
+              <div class="tag-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Majitar, Sikkim</span>
+              </div>
+              <div class="tag-dept">SMIT • B.Tech CSE (2024–2028)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Micro Chip 2 -->
+        <div class="floating-chip chip-bottom-left">
+          <div class="chip-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <div>
+            <div style="font-size:0.7rem; color:var(--text-faint);">DEVELOPMENT</div>
+            <div>Full-Stack & Cloud Systems</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT ME SECTION
+       ======================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">BACKGROUND & OBJECTIVES</span>
+        <h2 class="section-title">Engineering Intelligence, <br><span class="gradient-text">Architecting Real-World Systems</span></h2>
+        <p class="section-desc">
+          Undergraduate Computer Science engineer focused on machine learning algorithms, full-stack application architecture, and practical software solutions.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-content">
+          <p>
+            I am a Computer Science and Engineering undergraduate at <strong>Sikkim Manipal Institute of Technology (SMIT)</strong>, Batch 2024–2028. My primary objective is to secure a software engineering or AI engineering internship in a forward-thinking technology company where I can apply my skills to real production challenges.
+          </p>
+          <p>
+            My engineering work is rooted in practical execution: bridging the gap between intelligent algorithms (Generative AI, machine learning pipelines, autonomous agents) and modern full-stack web applications. I believe that powerful AI is only as useful as the software architecture and user interfaces delivering it.
+          </p>
+
+          <!-- SMIT Campus Highlight Card -->
+          <div class="smit-feature-card">
+            <div class="smit-icon-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="smit-details">
+              <h4>Sikkim Manipal Institute of Technology (SMIT)</h4>
+              <p>B.Tech in Computer Science and Engineering (2024–2028) • Majitar, Rangpo, East Sikkim.</p>
+              <div class="smit-pill-list">
+                <span class="smit-pill">Computer Science & Engineering</span>
+                <span class="smit-pill">AI & Machine Learning Focus</span>
+                <span class="smit-pill">B.Tech Batch 2024–2028</span>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Beyond coursework, I actively explore open-source technologies, participate in developer workshops, and continuously engineer software tools that solve concrete community and institutional challenges.
+          </p>
+        </div>
+
+        <!-- Bento Grid Highlights -->
+        <div class="about-bento-grid">
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h4>AI & Intelligent Systems</h4>
+            <p>Hands-on development with Google Gemini API, Scikit-learn, TensorFlow, Generative AI workflows, and autonomous agent loops.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h4>Full-Stack Development</h4>
+            <p>Architecting production apps with React, Node.js, Express.js, Flask, and cloud-native serverless deployments on Vercel.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h4>Backend & Databases</h4>
+            <p>Building schema-validated REST APIs and managing MongoDB Atlas clusters with connection caching and data security.</p>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h4>Software Architecture & Systems</h4>
+            <p>Dedicated to writing modular, maintainable, and scalable code following clean architectural patterns and rigorous testing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SKILLS & TECH STACK SECTION
+       ======================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">VERIFIED ARSENAL</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Competencies</span></h2>
+        <p class="section-desc">
+          Structured inventory of programming languages, frameworks, AI libraries, and developer tools I actively build with.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-nav-tabs">
+        <button class="skill-tab-btn active" data-skill-category="all">All Skills</button>
+        <button class="skill-tab-btn" data-skill-category="languages">Languages</button>
+        <button class="skill-tab-btn" data-skill-category="frontend">Frontend</button>
+        <button class="skill-tab-btn" data-skill-category="backend">Backend & APIs</button>
+        <button class="skill-tab-btn" data-skill-category="database">Databases</button>
+        <button class="skill-tab-btn" data-skill-category="ai">AI & Data Science</button>
+        <button class="skill-tab-btn" data-skill-category="tools">Tools & Platforms</button>
+      </div>
+
+      <!-- Skills Cards Grid (Rendered dynamically via js/main.js) -->
+      <div class="skills-grid" id="skills-container"></div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SHOWCASE SECTION
+       ======================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">MAJOR ENGINEERING WORK</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">
+          Real-world platforms demonstrating full-stack engineering, AI/ML integration, database architecture, and autonomous agent workflows.
+        </p>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="projects-filter-bar">
+        <button class="project-filter-btn active" data-filter="all">All Projects (4)</button>
+        <button class="project-filter-btn" data-filter="deployed">Live Deployed (3)</button>
+        <button class="project-filter-btn" data-filter="ai">AI & Machine Learning (3)</button>
+        <button class="project-filter-btn" data-filter="fullstack">Full-Stack Platforms (2)</button>
+      </div>
+
+      <!-- Projects Grid (Pre-rendered for Instant Loading & SEO Crawlability) -->
+      <div class="projects-grid" id="projects-container">
+        <!-- Project 1: Tracker – Dumka Sports Academy -->
+        <div class="project-card" data-category="fullstack" data-status="deployed">
+          <div class="project-image-box">
+            <img src="assets/images/project_tracker_dumka.png" alt="Tracker – Dumka Sports Academy" loading="lazy">
+            <span class="project-category-badge">Full-Stack Development | Sports Management</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
+              <span class="status-pill deployed">
+                <span class="dot"></span>
+                <span>Live Production</span>
+              </span>
+            </div>
+            <h3 class="project-title">
+              <span>Tracker – Dumka Sports Academy</span>
+            </h3>
+            <p class="project-tagline">A centralized sports academy management and tracking platform engineered to digitize athlete attendance, streamline multi-sport training workflows, maintain athlete rosters, and generate performance analytics.</p>
+            <div class="project-features-list">
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Streamlines end-to-end athlete registration, discipline tracking, and roster management</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Interactive administrative dashboard visualizing athlete attendance, schedules, and training cohorts</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dynamic data management pipelines with secure REST API endpoints and schema validation</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express.js</span>
+              <span class="project-tag">MongoDB Atlas</span>
+              <span class="project-tag">Vercel</span>
+              <span class="project-tag">REST APIs</span>
+              <span class="project-tag">TailwindCSS</span>
+            </div>
+            <div class="project-footer-actions">
+              <button class="btn btn-secondary btn-sm inspect-proj-btn" data-project-id="tracker-dumka">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <div class="project-links-row">
+                <a href="https://github.com/ankitkumar2006official-design/Tracker" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Inspect GitHub Repository" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://dumka-sports-tracker.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Launch Live Demo" aria-label="Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: MediGuard AI – Operation Ward Zero -->
+        <div class="project-card" data-category="ai" data-status="deployed">
+          <div class="project-image-box">
+            <img src="assets/images/project_mediguard_ai.png" alt="MediGuard AI – Operation Ward Zero" loading="lazy">
+            <span class="project-category-badge">AI Healthcare | Full-Stack Development</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
+              <span class="status-pill deployed">
+                <span class="dot"></span>
+                <span>Live Production</span>
+              </span>
+            </div>
+            <h3 class="project-title">
+              <span>MediGuard AI – Operation Ward Zero</span>
+            </h3>
+            <p class="project-tagline">An AI-powered clinical healthcare management platform designed to optimize emergency department workflows, automate patient triage prioritization, and provide real-time clinical decision support under high patient load.</p>
+            <div class="project-features-list">
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Real-time emergency triage scoring system prioritizing high-risk patients instantly</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Operation Ward Zero dashboard monitoring clinical capacity, bed allocations, and vital signs</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Seamless patient workflow management from admission and vitals logging to treatment handoff</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">AI Healthcare</span>
+              <span class="project-tag">REST APIs</span>
+              <span class="project-tag">Vercel</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <div class="project-footer-actions">
+              <button class="btn btn-secondary btn-sm inspect-proj-btn" data-project-id="mediguard-ai">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <div class="project-links-row">
+                <a href="https://github.com/ankitkumar2006official-design/Medicare-AI-Healthcare" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Inspect GitHub Repository" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://frontend-fawn-eight-96.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Launch Live Demo" aria-label="Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: GeoCommerce AI -->
+        <div class="project-card" data-category="ai" data-status="deployed">
+          <div class="project-image-box">
+            <img src="assets/images/project_geocommerce_ai.png" alt="GeoCommerce AI" loading="lazy">
+            <span class="project-category-badge">Artificial Intelligence | Data Science | E-Commerce Analytics</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
+              <span class="status-pill deployed">
+                <span class="dot"></span>
+                <span>Live Production</span>
+              </span>
+            </div>
+            <h3 class="project-title">
+              <span>GeoCommerce AI</span>
+            </h3>
+            <p class="project-tagline">An AI-powered geographic commerce intelligence platform designed to analyze e-commerce sales datasets, uncover regional consumer demand patterns, and generate generative business strategies using Google Gemini AI.</p>
+            <div class="project-features-list">
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Analyzes multi-city sales datasets to detect regional purchasing spikes and seasonal trends</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Interactive geographic analytics dashboards mapping demand density across urban & tier-2 hubs</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Google Gemini AI integration synthesizing strategic supply-chain and inventory recommendations</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Gemini API</span>
+              <span class="project-tag">MongoDB Atlas</span>
+              <span class="project-tag">Data Science</span>
+              <span class="project-tag">Pandas</span>
+              <span class="project-tag">Vercel</span>
+            </div>
+            <div class="project-footer-actions">
+              <button class="btn btn-secondary btn-sm inspect-proj-btn" data-project-id="geocommerce-ai">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <div class="project-links-row">
+                <a href="https://github.com/ankitkumar2006official-design/GeoecommerceAI" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Inspect GitHub Repository" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://geoecommerce-ai.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Launch Live Demo" aria-label="Live Demo">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Autonomous AI Software Engineer Agent -->
+        <div class="project-card" data-category="ai" data-status="in-development">
+          <div class="project-image-box">
+            <img src="assets/images/project_ai_engineer_agent.png" alt="Autonomous AI Software Engineer Agent" loading="lazy">
+            <span class="project-category-badge">Artificial Intelligence | Autonomous AI Agents</span>
+          </div>
+          <div class="project-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.6rem;">
+              <span class="status-pill in-development">
+                <span class="dot"></span>
+                <span>In Development</span>
+              </span>
+            </div>
+            <h3 class="project-title">
+              <span>Autonomous AI Software Engineer Agent</span>
+            </h3>
+            <p class="project-tagline">An AI-powered software engineering assistant designed to autonomously understand natural language development tasks, decompose complex goals, generate modular code, debug errors, and automate software workflows.</p>
+            <div class="project-features-list">
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Decomposes high-level natural language developer prompts into structured execution plans</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Generates modular, idiomatic code with AST-level syntax verification and dependency resolution</span>
+              </div>
+              <div class="project-feature-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Self-reflective error correction loop analyzing test output and runtime tracebacks to fix bugs</span>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">AI Agents</span>
+              <span class="project-tag">LangChain</span>
+              <span class="project-tag">Gemini API</span>
+              <span class="project-tag">AST Parsing</span>
+              <span class="project-tag">Git Automation</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <div class="project-footer-actions">
+              <button class="btn btn-secondary btn-sm inspect-proj-btn" data-project-id="ai-engineer-agent">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+              <div class="project-links-row">
+                <a href="https://github.com/ankitkumar2006official-design/AI-SOFTWARE-ENGINEER-AGENT" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Inspect GitHub Repository" aria-label="GitHub Repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <button class="project-link-icon btn-in-dev" title="In Development — Not Deployed Yet" aria-label="In Development" onclick="showToast('Autonomous AI Agent is currently in active development. Inspect the GitHub repository for source code.')">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECT DETAIL ARCHITECTURE MODAL (10 Detailed View Criteria)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <img src="" alt="" id="modal-img" class="modal-header-image">
+
+      <div class="modal-body">
+        <div class="modal-meta-header">
+          <span id="modal-category" class="modal-category-tag"></span>
+          <span id="modal-status-pill" class="status-pill"></span>
+        </div>
+
+        <h2 id="modal-title" class="modal-title"></h2>
+        <div id="modal-tagline" class="modal-tagline"></div>
+
+        <!-- 10 Architectural Criteria Container (Rendered dynamically via js/main.js) -->
+        <div id="modal-details-container"></div>
+
+        <!-- Action Links -->
+        <div class="modal-footer-actions" style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border-subtle);">
+          <a href="#" target="_blank" rel="noopener noreferrer" id="modal-github-link" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub Repository</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" id="modal-live-link" class="btn btn-primary">
+            <span>Launch Live Demo</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       WHAT SETS ME APART / UNIQUE ENGINEERING DIFFERENTIATORS
+       ======================================================================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">ENGINEERING DNA</span>
+        <h2 class="section-title">What Sets Me <span class="gradient-text">Apart</span></h2>
+        <p class="section-desc">
+          Core technical differentiators, execution philosophy, and real-world impact that define my engineering journey.
+        </p>
+      </div>
+
+      <div class="unique-edge-grid">
+        <!-- Pillar 1: Production-Driven -->
+        <div class="unique-edge-card">
+          <div class="edge-card-header">
+            <div class="edge-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+            </div>
+            <span class="edge-badge">PRODUCTION-DRIVEN</span>
+          </div>
+          <h3 class="edge-title">Shipping Live Systems, Not Just Toy Prototypes</h3>
+          <p class="edge-text">
+            While many undergraduate developers stop at local localhost demos, I architect and deploy complete, live web systems on Vercel backed by live MongoDB Atlas clusters. From handling serverless cold starts to configuring connection pooling and CORS policies, I take software all the way from idea to accessible URL.
+          </p>
+          <div class="edge-tags">
+            <span class="edge-tag">3 Live Deployments</span>
+            <span class="edge-tag">Cloud Infrastructure</span>
+            <span class="edge-tag">Vercel & Atlas</span>
+          </div>
+        </div>
+
+        <!-- Pillar 2: AI-First Systems -->
+        <div class="unique-edge-card">
+          <div class="edge-card-header">
+            <div class="edge-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z"/><path d="M16 8v1a4 4 0 0 1-8 0V8"/><line x1="12" y1="13" x2="12" y2="22"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <span class="edge-badge">AI-FIRST ARCHITECTURE</span>
+          </div>
+          <h3 class="edge-title">Beyond Simple Prompts: Autonomous & Agentic Workflows</h3>
+          <p class="edge-text">
+            I don't treat AI as a mere copy-paste autocomplete. I architect multi-step autonomous workflows: designing ReAct planning loops, abstract syntax tree (AST) code analysis, and automated self-reflection in my Autonomous AI Software Engineer Agent, as well as integrating Gemini API for regional business intelligence in GeoCommerce AI.
+          </p>
+          <div class="edge-tags">
+            <span class="edge-tag">Autonomous Agents</span>
+            <span class="edge-tag">Gemini API</span>
+            <span class="edge-tag">AST Code Parsing</span>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Domain Impact -->
+        <div class="unique-edge-card">
+          <div class="edge-card-header">
+            <div class="edge-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 8 8 12 12 16 12 8"/></svg>
+            </div>
+            <span class="edge-badge">DOMAIN IMPACT</span>
+          </div>
+          <h3 class="edge-title">Solving Concrete Ground Realities</h3>
+          <p class="edge-text">
+            My engineering work is directed at real stakeholders: digitizing athlete performance and attendance registers for Dumka Sports Academy in Jharkhand, designing triage priority scoring for overcrowded hospital emergency rooms (MediGuard AI), and mapping geographic demand patterns across Indian tier-2 retail hubs.
+          </p>
+          <div class="edge-tags">
+            <span class="edge-tag">Healthcare Triage</span>
+            <span class="edge-tag">Sports Management</span>
+            <span class="edge-tag">Geographic Commerce</span>
+          </div>
+        </div>
+
+        <!-- Pillar 4: Engineering Rigor & Clean Code -->
+        <div class="unique-edge-card">
+          <div class="edge-card-header">
+            <div class="edge-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="9" x2="12" y2="15"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+            </div>
+            <span class="edge-badge">ENGINEERING CRAFT</span>
+          </div>
+          <h3 class="edge-title">Fast Prototyping & Modern Developer Tooling</h3>
+          <p class="edge-text">
+            Committed to continuous self-driven learning and rapid prototyping. I stay ahead of the curve by integrating modern developer ergonomics—from containerized Docker environments and Linux/WSL setups to AST code inspection and automated testing workflows.
+          </p>
+          <div class="edge-tags">
+            <span class="edge-tag">Rapid Prototyping</span>
+            <span class="edge-tag">Developer Ergonomics</span>
+            <span class="edge-tag">Modern Tooling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EDUCATION SECTION
+       ======================================================================== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">ACADEMIC FOUNDATIONS</span>
+        <h2 class="section-title">Education <span class="gradient-text">Timeline</span></h2>
+        <p class="section-desc">
+          Rigorous academic grounding in computer science principles and software engineering.
+        </p>
+      </div>
+
+      <div class="education-container">
+        <div class="education-card">
+          <div class="education-header">
+            <div>
+              <h3 class="education-degree">Bachelor of Technology (B.Tech) in Computer Science and Engineering</h3>
+              <div class="education-institution">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Sikkim Manipal Institute of Technology (SMIT)</span>
+              </div>
+            </div>
+            <span class="education-period-badge">Batch 2024–2028</span>
+          </div>
+
+          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.65; margin-bottom:1.5rem;">
+            Pursuing a comprehensive four-year engineering curriculum covering computational theory, software design patterns, systems programming, and modern machine learning frameworks.
+          </p>
+
+          <div class="education-coursework-title">Relevant Computer Science Coursework & Focus Areas</div>
+          <div class="education-coursework-tags">
+            <span class="education-tag">Data Structures & Algorithms</span>
+            <span class="education-tag">Object-Oriented Programming (Java / C++)</span>
+            <span class="education-tag">Database Management Systems (SQL & MongoDB)</span>
+            <span class="education-tag">Operating Systems</span>
+            <span class="education-tag">Computer Networks</span>
+            <span class="education-tag">Software Architecture & System Design</span>
+            <span class="education-tag">Artificial Intelligence & Machine Learning</span>
+            <span class="education-tag">Full-Stack Web Technologies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INTERACTIVE DEV TERMINAL (ANKIT DEV CLI)
+       ======================================================================== -->
+  <section class="terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">DEVELOPER SHELL</span>
+        <h2 class="section-title">Interactive <span class="gradient-text">CLI Terminal</span></h2>
+        <p class="section-desc">
+          Prefer command-line interfaces? Query my profile, inspect projects, or execute commands directly.
+        </p>
+      </div>
+
+      <div class="terminal-window">
+        <!-- Titlebar -->
+        <div class="terminal-titlebar">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <div class="terminal-title">ankit@smit-workstation:~ (bash)</div>
+          <div style="width:36px;"></div>
+        </div>
+
+        <!-- Terminal Output Screen -->
+        <div class="terminal-screen" id="terminal-screen">
+          <div class="terminal-history" id="terminal-history">
+            <div class="term-line-output">
+    _         _    _ _     _  __                             
+   / \   _ __ | | _(_) |_  | |/ /   _ _ __ ___   __ _ _ __   
+  / _ \ | '_ \| |/ / | __| | ' / | | | '_ ` _ \ / _` | '__|  
+ / ___ \| | | |   <| | |_  | . \ |_| | | | | | | (_| | |     
+/_/   \_\_| |_|_|\_\_|\__| |_|\_\__,_|_| |_| |_|\__,_|_|     
+            </div>
+            <div class="term-line-output">
+Welcome to Ankit Kumar's interactive portfolio terminal!
+Type <span class="term-highlight">help</span> to view available commands, or click the shortcut chips below.
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="term-prompt">ankit@smit:~$</span>
+            <input type="text" id="terminal-input" class="term-input" placeholder="type 'help', 'whoami', or 'projects'..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+        <!-- Command Shortcut Chips -->
+        <div class="terminal-command-hints">
+          <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-faint); margin-right:4px;">Quick commands:</span>
+          <button class="hint-chip" data-cmd="whoami">whoami</button>
+          <button class="hint-chip" data-cmd="skills">skills</button>
+          <button class="hint-chip" data-cmd="projects">projects</button>
+          <button class="hint-chip" data-cmd="highlights">highlights</button>
+          <button class="hint-chip" data-cmd="education">education</button>
+          <button class="hint-chip" data-cmd="contact">contact</button>
+          <button class="hint-chip" data-cmd="github">github</button>
+          <button class="hint-chip" data-cmd="linkedin">linkedin</button>
+          <button class="hint-chip" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT & INQUIRY SECTION
+       ======================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">COMMUNICATION</span>
+        <h2 class="section-title">Let's Connect & <span class="gradient-text">Build Together</span></h2>
+        <p class="section-desc">
+          Interested in discussing internship opportunities, collaborating on AI/full-stack projects, or reviewing code? Reach out directly.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Coordinates -->
+        <div class="contact-info-card">
+          <h3>Contact Coordinates</h3>
+          <p>
+            I am actively looking for software engineering and AI engineering internships. Feel free to contact me via email or connect through GitHub and LinkedIn.
+          </p>
+
+          <div class="contact-methods">
+            <!-- Direct Email -->
+            <div class="contact-method-row">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <div class="contact-method-label">Direct Email</div>
+                <div class="contact-method-val"><a href="mailto:ankitkumar2006official@gmail.com" style="color:inherit; text-decoration:none;">ankitkumar2006official@gmail.com</a></div>
+              </div>
+              <button class="copy-btn copy-email-btn" title="Copy to clipboard">Copy</button>
+            </div>
+
+            <!-- Campus Location -->
+            <div class="contact-method-row">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <div class="contact-method-label">Institution Campus</div>
+                <div class="contact-method-val">Sikkim Manipal Institute of Technology, Majitar, Rangpo, East Sikkim - 737136</div>
+              </div>
+            </div>
+
+            <!-- Internship Availability -->
+            <div class="contact-method-row">
+              <div class="contact-method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="contact-method-text">
+                <div class="contact-method-label">Opportunity Status</div>
+                <div class="contact-method-val">Open for Software Engineering & AI Internships</div>
+              </div>
+            </div>
+          </div>
+
+          <h4 style="font-size:0.95rem; margin-bottom:1rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em;">Professional Profiles</h4>
+          <div class="social-links-bar">
+            <!-- GitHub Profile -->
+            <a href="https://github.com/ankitkumar2006official-design" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="Ankit Kumar GitHub" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <!-- LinkedIn Profile -->
+            <a href="https://www.linkedin.com/in/ankit-kumar-3388732ba/" target="_blank" rel="noopener noreferrer" class="social-link-btn" title="Ankit Kumar LinkedIn" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Message Form -->
+        <div class="contact-form-box">
+          <h3 style="font-size:1.65rem; margin-bottom:0.75rem;">Send a Dispatch</h3>
+          <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:1.5rem;">
+            Fill out the form below or email me directly at <a href="mailto:ankitkumar2006official@gmail.com" style="color:var(--accent-primary); text-decoration:underline;">ankitkumar2006official@gmail.com</a>.
+          </p>
+
+          <form id="contact-form" action="https://formspree.io/f/mdeerayj" method="POST">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name *</label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Maya Sharma / Recruiter" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. maya@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Software Engineering / AI Internship Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message *</label>
+              <textarea id="contact-message" name="message" class="form-control" placeholder="Tell me about your role, team, or project requirements..." required rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <span>Transmit Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-credit">
+        Designed & Engineered by <strong>Ankit Kumar</strong> • Sikkim Manipal Institute of Technology (SMIT) (2024–2028)
+      </div>
+
+      <!-- Social Links in Footer -->
+      <div style="display:flex; gap:1rem; align-items:center;">
+        <a href="https://github.com/ankitkumar2006official-design" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted); display:flex; align-items:center; gap:0.4rem; font-size:0.85rem;" title="GitHub Profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+        <span style="color:var(--border-subtle);">•</span>
+        <a href="https://www.linkedin.com/in/ankit-kumar-3388732ba/" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted); display:flex; align-items:center; gap:0.4rem; font-size:0.85rem;" title="LinkedIn Profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <a href="#hero" class="footer-back-to-top">
+        <span>Back to Top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts with cache-busting -->
+  <script src="js/projects-data.js?v=2.2"></script>
+  <script src="js/main.js?v=2.2"></script>
+</body>
+</html>

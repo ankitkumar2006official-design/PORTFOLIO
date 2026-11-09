@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="agentBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0e1326"/>
+      <stop offset="100%" stop-color="#060912"/>
+    </linearGradient>
+    <linearGradient id="agentAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="agentCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191c33" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f1122" stop-opacity="0.98"/>
+    </linearGradient>
+    <filter id="agentGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#agentBg)"/>
+
+  <!-- Code Matrix Pattern -->
+  <g opacity="0.08" stroke="#8b5cf6" stroke-width="1">
+    <line x1="0" y1="135" x2="1200" y2="135"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="0" y1="405" x2="1200" y2="405"/>
+    <line x1="0" y1="540" x2="1200" y2="540"/>
+    <line x1="240" y1="0" x2="240" y2="675"/>
+    <line x1="480" y1="0" x2="480" y2="675"/>
+    <line x1="720" y1="0" x2="720" y2="675"/>
+    <line x1="960" y1="0" x2="960" y2="675"/>
+  </g>
+
+  <!-- Glows -->
+  <circle cx="240" cy="220" r="180" fill="#8b5cf6" opacity="0.12" filter="url(#agentGlow)"/>
+  <circle cx="950" cy="460" r="160" fill="#06b6d4" opacity="0.1" filter="url(#agentGlow)"/>
+
+  <!-- Main Terminal & Agent Orchestration Frame -->
+  <g transform="translate(80, 60)">
+    <rect width="1040" height="555" rx="16" fill="url(#agentCard)" stroke="#312e81" stroke-width="1.5"/>
+
+    <!-- Titlebar -->
+    <rect width="1040" height="48" rx="16" fill="#141830" opacity="0.95"/>
+    <circle cx="30" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="50" cy="24" r="6" fill="#f59e0b"/>
+    <circle cx="70" cy="24" r="6" fill="#10b981"/>
+
+    <!-- Status pill in titlebar -->
+    <rect x="280" y="10" width="480" height="28" rx="14" fill="#0b0d1a" stroke="#312e81" stroke-width="1"/>
+    <text x="520" y="28" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">github.com/ankitkumar2006official-design/AI-SOFTWARE-ENGINEER-AGENT</text>
+
+    <!-- App Header -->
+    <g transform="translate(30, 75)">
+      <!-- Agent Brain / Bot Icon -->
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="url(#agentAccent)"/>
+      <path d="M12 18 L18 12 L24 18 M18 12 L18 24" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+      <text x="48" y="22" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="19">Autonomous AI Software Engineer Agent</text>
+      <text x="48" y="38" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="12">Self-Reflective Multi-Step Code Generation, Debugging & Workflow Automation Engine</text>
+
+      <!-- In Development Badge -->
+      <rect x="800" y="4" width="180" height="28" rx="14" fill="#8b5cf6" fill-opacity="0.18" stroke="#8b5cf6" stroke-width="1"/>
+      <circle cx="818" cy="18" r="4" fill="#a78bfa"/>
+      <text x="898" y="22" fill="#c4b5fd" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">IN ACTIVE DEVELOPMENT</text>
+    </g>
+
+    <!-- Middle Row: Agent Thought Process Pipeline -->
+    <g transform="translate(30, 140)">
+      <!-- Step 1: Prompt Parsing -->
+      <g transform="translate(0, 0)">
+        <rect width="230" height="85" rx="10" fill="#0d1020" stroke="#1f2244" stroke-width="1"/>
+        <text x="16" y="26" fill="#818cf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">STAGE 1: PLAN</text>
+        <text x="16" y="46" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Goal Decomposition</text>
+        <text x="16" y="65" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">AST & Context Graph</text>
+      </g>
+
+      <!-- Arrow -->
+      <path d="M 238 42 L 252 42" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Step 2: Code Gen -->
+      <g transform="translate(260, 0)">
+        <rect width="230" height="85" rx="10" fill="#0d1020" stroke="#1f2244" stroke-width="1"/>
+        <text x="16" y="26" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">STAGE 2: SYNTHESIZE</text>
+        <text x="16" y="46" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Code & Test Generation</text>
+        <text x="16" y="65" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Modular Diff Insertion</text>
+      </g>
+
+      <!-- Arrow -->
+      <path d="M 498 42 L 512 42" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Step 3: Sandboxed Execution -->
+      <g transform="translate(520, 0)">
+        <rect width="230" height="85" rx="10" fill="#0d1020" stroke="#1f2244" stroke-width="1"/>
+        <text x="16" y="26" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">STAGE 3: EXECUTE</text>
+        <text x="16" y="46" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Automated Test Runner</text>
+        <text x="16" y="65" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Subprocess & Memory Isolation</text>
+      </g>
+
+      <!-- Arrow -->
+      <path d="M 758 42 L 772 42" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Step 4: Self Reflection -->
+      <g transform="translate(780, 0)">
+        <rect width="200" height="85" rx="10" fill="#0d1020" stroke="#1f2244" stroke-width="1"/>
+        <text x="16" y="26" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">STAGE 4: REFLECT</text>
+        <text x="16" y="46" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Error Self-Correction</text>
+        <text x="16" y="65" fill="#64748b" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Zero-Human Loop Fix</text>
+      </g>
+    </g>
+
+    <!-- Lower Section: Terminal & AST Analysis -->
+    <g transform="translate(30, 245)">
+      <!-- Left: Agent Terminal Output -->
+      <rect x="0" y="0" width="570" height="230" rx="12" fill="#090c17" stroke="#1b1f3b" stroke-width="1"/>
+      <g transform="translate(20, 30)">
+        <text x="0" y="0" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="12">[agent.orchestrator] Received prompt: "Refactor async database connection pool"</text>
+        <text x="0" y="24" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="12">[parser.ast] Scanning 14 source files... 2 circular imports detected</text>
+        <text x="0" y="48" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="12">[generator.diff] Generated patch: `pool_size=10, max_overflow=20`</text>
+        <text x="0" y="72" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="12">[test.runner] Running pytest suite (12/12 passing in 1.4s)</text>
+        <text x="0" y="96" fill="#c4b5fd" font-family="'JetBrains Mono', monospace" font-size="12">[git.commit] Verified zero regression. Auto-staged clean commit</text>
+        <text x="0" y="125" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">✓ Task finished autonomously with 100% test coverage</text>
+      </g>
+
+      <!-- Right: Architecture & Tech Stack Specs -->
+      <g transform="translate(590, 0)">
+        <rect x="0" y="0" width="390" height="230" rx="12" fill="#090c17" stroke="#1b1f3b" stroke-width="1"/>
+        <text x="20" y="34" fill="#f1f5f9" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">Technical Stack & Agent Components</text>
+
+        <g transform="translate(20, 52)">
+          <rect width="350" height="46" rx="8" fill="#141830"/>
+          <text x="14" y="20" fill="#a78bfa" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">CORE LLM & WORKFLOW</text>
+          <text x="14" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Python 3.11 • LangChain / LangGraph • Gemini API</text>
+        </g>
+
+        <g transform="translate(20, 108)">
+          <rect width="350" height="46" rx="8" fill="#141830"/>
+          <text x="14" y="20" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">PARSER & CODE EXECUTION</text>
+          <text x="14" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Tree-sitter AST • Docker Sandboxed Container Execution</text>
+        </g>
+
+        <g transform="translate(20, 164)">
+          <rect width="350" height="46" rx="8" fill="#141830"/>
+          <text x="14" y="20" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">VERSION CONTROL & REPO INTELLIGENCE</text>
+          <text x="14" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">GitPython • ChromaDB Vector Embedding Cache</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+
