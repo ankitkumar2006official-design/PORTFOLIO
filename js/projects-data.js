@@ -171,7 +171,7 @@ const portfolioProjects = [
     featured: false,
     status: "in-development",
     statusText: "In Development",
-    liveUrl: null, // Transparently in development - no fake deployment link
+    liveUrl: "https://ai-software-engineer-agent-blond.vercel.app/",
     githubUrl: "https://github.com/ankitkumar2006official-design/AI-SOFTWARE-ENGINEER-AGENT",
     description: "An AI-powered software engineering assistant designed to autonomously understand natural language development tasks, decompose complex goals, generate modular code, debug errors, and automate software workflows.",
     tags: ["Python", "AI Agents", "LangChain", "Gemini API", "AST Parsing", "Git Automation", "Docker"],
