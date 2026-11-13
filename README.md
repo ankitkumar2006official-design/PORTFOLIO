@@ -36,7 +36,7 @@ This portfolio website is designed and engineered to showcase real-world full-st
 | **Tracker – Dumka Sports Academy** | Full-Stack Development \| Sports Management | [dumka-sports-tracker.vercel.app](https://dumka-sports-tracker.vercel.app/) | [Tracker](https://github.com/ankitkumar2006official-design/Tracker) |
 | **MediGuard AI – Operation Ward Zero** | AI Healthcare \| Full-Stack Development | [frontend-fawn-eight-96.vercel.app](https://frontend-fawn-eight-96.vercel.app/) | [Medicare-AI-Healthcare](https://github.com/ankitkumar2006official-design/Medicare-AI-Healthcare) |
 | **GeoCommerce AI** | Artificial Intelligence \| E-Commerce Analytics | [geoecommerce-ai.vercel.app](https://geoecommerce-ai.vercel.app/) | [GeoecommerceAI](https://github.com/ankitkumar2006official-design/GeoecommerceAI) |
-| **Autonomous AI Software Engineer Agent** | Artificial Intelligence \| Autonomous AI Agents | [https://ankitkumar.is-a.dev/](https://ankitkumar.is-a.dev/) | [AI-SOFTWARE-ENGINEER-AGENT](https://github.com/ankitkumar2006official-design/AI-SOFTWARE-ENGINEER-AGENT) |
+| **Autonomous AI Software Engineer Agent** | Artificial Intelligence \| Autonomous AI Agents | [https://ai-software-engineer-agent-blond.vercel.app/](https://ai-software-engineer-agent-blond.vercel.app/) | [AI-SOFTWARE-ENGINEER-AGENT](https://github.com/ankitkumar2006official-design/AI-SOFTWARE-ENGINEER-AGENT) |
 
 ---
 
