@@ -10,7 +10,7 @@ Welcome to the personal developer portfolio repository of **Ankit Kumar**, an un
 
 [![Live Deployment](https://img.shields.io/badge/Live_Site-portfolio--fnd6.onrender.com-10b981?style=for-the-badge&logo=render&logoColor=white)](https://portfolio-fnd6.onrender.com/)
 
-**Live URL:** [https://portfolio-fnd6.onrender.com/](https://portfolio-fnd6.onrender.com/)  
+**Live URL:** [https://portfolio-fnd6.onrender.com/](https://ankitkumar.is-a.dev/)
 **ATS Resume:** [https://portfolio-fnd6.onrender.com/resume.html](https://portfolio-fnd6.onrender.com/resume.html)
 
 ---
