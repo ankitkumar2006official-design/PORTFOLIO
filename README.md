@@ -22,7 +22,7 @@ This portfolio website is designed and engineered to showcase real-world full-st
 - **Developer:** Ankit Kumar
 - **Institution:** Sikkim Manipal Institute of Technology (SMIT), Sikkim
 - **Specialization:** Aspiring AI Engineer | Full-Stack Developer | Machine Learning Enthusiast
-- **Live Deployment:** [https://portfolio-fnd6.onrender.com/](https://portfolio-fnd6.onrender.com/)
+- **Live Deployment:** [https://ankitkumar.is-a.dev/](https://ankitkumar.is-a.dev/)
 - **Official Email:** [ankitkumar2006official@gmail.com](mailto:ankitkumar2006official@gmail.com)
 - **GitHub:** [https://github.com/ankitkumar2006official-design](https://github.com/ankitkumar2006official-design)
 - **LinkedIn:** [https://www.linkedin.com/in/ankit-kumar-3388732ba/](https://www.linkedin.com/in/ankit-kumar-3388732ba/)
